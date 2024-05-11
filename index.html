@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT CRUD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div id="con1" style="display: table-caption;">
+        <h2>Add Contact</h2>
+        <form id="contactForm">
+            First Name:<input type="text" id="firstName" placeholder="First Name" required><br><br>
+            Last Name:<input type="text" id="lastName" placeholder="Last Name" required><br><br>
+            Phone Number:<input type="number" id="phoneNumber" placeholder="Phone Number" required><br><br>
+            
+        </form>
+        <button onclick="submit()" id="addBtn">Add Contact</button>
+        <button  id="updateBtn" onclick="updateContact2()" style="display: none;">Update Contact</button>
+    </div>
+
+    <h2>Contacts List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Phone Number</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody id="contactTable">
+            <!-- Contacts will be loaded here -->
+        </tbody>
+    </table>
+
+</body>
+
+</html>
